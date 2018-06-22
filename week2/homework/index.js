@@ -10,12 +10,12 @@ console.log(jack);
 jack.call();
 
 let list = new ContactList("contacts.json");
-list.add("sajid");
-list.add(new Contact("Saad", 2, null));
-list.add(jack);
+
 list.add(jack);
 list.add(new Contact("Sajid", 40, 3232323));
-
+list.load();
 list.save()
 
-console.log(list)
+majid.birthday();
+
+console.log(list);

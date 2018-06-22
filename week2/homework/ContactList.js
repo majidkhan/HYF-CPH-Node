@@ -25,6 +25,10 @@ class ContactList {
         } else
             console.log("No filenmae supplied"); 
     }
+    load() {
+        let renderJson = JSON.stringify(fs.readFileSync("contacts.json","utf8"));
+        console.log("Render Contacts",renderJson);
+    }
 };
 
 module.exports = ContactList;

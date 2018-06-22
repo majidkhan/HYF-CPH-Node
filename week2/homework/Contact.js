@@ -12,6 +12,9 @@ class Contact {
             console.log(this.name + " has no phone number.");
         }
     }
+    birthday() {    
+        console.log(`Happy ${this.age}th birthday ${this.name}`);
+    }
 };
 
 module.exports = Contact;
